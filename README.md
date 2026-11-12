@@ -36,3 +36,8 @@ Questions like "papers on ZigBee" are answered by searching the publication list
 
 ## Intro video
 `assets/intro.mp4` (71 s, 1280×720, narrated, ~4 MB), captions in `assets/intro.vtt`, with poster `assets/intro-poster.jpg`. Chapter times are in the `CH` array in `index.html`.
+
+## Palettes & extras
+- Colour palettes: Iris (default), Ocean, Blossom — palette button in the top bar; tokens at the top of the `<style>` block
+- Chat assistant: voice input (mic) and read-aloud answers where the browser supports it
+- QR code in Contact points to https://accreditationworking-all.github.io/Dr.Wadhwa/
