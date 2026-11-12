@@ -387,6 +387,20 @@ footer .fl{font-family:Fraunces,serif;font-size:20px;color:var(--ink);margin-bot
 .cb-h .spk.on{background:var(--peach);color:#fff}
 .cb-h .spk + .x{margin-left:6px}
 
+/* milestones */
+.ms-grid{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:16px}
+.ms{padding:26px;border-radius:var(--r);position:relative;overflow:hidden}
+.ms .k{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.ms .big{font-family:Fraunces,serif;font-weight:700;font-size:56px;line-height:1;margin:10px 0 6px}
+.ms .big small{font-size:22px;color:var(--muted);font-weight:600}
+.ms h3{font-size:24px;margin:12px 0 6px}
+.ms p{font-size:15px;color:var(--ink2)}
+.ms .ring{position:absolute;right:-30px;top:-30px;width:150px;height:150px;opacity:.9}
+.ms-bar{height:10px;border-radius:10px;background:color-mix(in srgb,var(--card) 70%,transparent);margin:12px 0 10px;overflow:hidden}
+.ms-bar i{display:block;height:100%;width:0;border-radius:10px;background:var(--sage);transition:width 1.6s cubic-bezier(.2,.8,.2,1)}
+.rv.in .ms-bar i{width:93.5%}
+@media(max-width:900px){.ms-grid{grid-template-columns:1fr}}
+
 /* intro video */
 .vid-grid{display:grid;grid-template-columns:1.5fr .5fr;gap:20px;align-items:start}
 .vid-box{position:relative;border-radius:26px;overflow:hidden;box-shadow:var(--shadow);background:#000;aspect-ratio:16/9}
@@ -546,7 +560,7 @@ footer .fl{font-family:Fraunces,serif;font-size:20px;color:var(--ink);margin-bot
         </div>
       </div>
       <div class="float f1"><span class="f-ic t-honey"><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="M8.5 14 7 22l5-3 5 3-1.5-8"/></svg></span><div>Singapore Educational<small>Excellence Award 2023</small></div></div>
-      <div class="float f2"><div><div class="big" style="color:var(--sage)">26+</div><small>years in higher ed</small></div></div>
+      <div class="float f2"><div><small style="color:var(--sage);font-weight:800;letter-spacing:.08em">NAAC CGPA</small><div class="big" style="color:var(--sage)">3.74<span style="font-size:14px;color:var(--muted)"> / 4</span></div><small>highest, affiliated college</small></div></div>
       <div class="float f3"><span class="f-ic t-lav"><svg class="i" viewBox="0 0 24 24"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.4 6.8 19.1l1-5.8L3.5 9.2l5.9-.9z"/></svg></span><div>IIC 3-Star<small>rise in one year</small></div></div>
     </div>
   </div>
@@ -564,6 +578,34 @@ footer .fl{font-family:Fraunces,serif;font-size:20px;color:var(--ink);margin-bot
       <div class="stat s4"><div class="v" data-n="253">0</div><div class="l">Citations</div></div>
       <div class="stat s5"><div class="v" data-n="6">0</div><div class="l">Books</div></div>
       <div class="stat s1"><div class="v" data-n="7">0</div><div class="l">Patents</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MILESTONES ============ -->
+<section id="milestones" style="padding:20px 0 60px">
+  <div class="wrap">
+    <div class="sec-head rv" style="margin-bottom:26px">
+      <span class="eyebrow">Milestones as Principal</span>
+      <h2 class="sec-h">Accreditation and ranking, delivered</h2>
+    </div>
+    <div class="ms-grid">
+      <div class="ms rv" style="background:var(--sage-s)">
+        <div class="k" style="color:var(--sage)">NAAC accreditation</div>
+        <div class="big" style="color:var(--sage)">3.74<small> / 4</small></div>
+        <div class="ms-bar" aria-hidden="true"><i></i></div>
+        <p><b style="color:var(--ink)">Highest score in an affiliated college</b> — a CGPA of 3.74 on NAAC's 4-point scale, achieved during his principalship.</p>
+      </div>
+      <div class="ms rv" style="background:var(--peach-s)">
+        <div class="k" style="color:var(--peach)">NBA accreditation</div>
+        <h3>Programmes accredited by NBA</h3>
+        <p>Led outcome-based education, CO–PO attainment and SAR preparation through to NBA accreditation as Principal.</p>
+      </div>
+      <div class="ms rv" style="background:var(--honey-s)">
+        <div class="k" style="color:var(--honey)">NIRF ranking</div>
+        <h3>Ranked in NIRF</h3>
+        <p>Built the data systems and submissions that earned the institution a place in the NIRF national rankings.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -596,7 +638,7 @@ footer .fl{font-family:Fraunces,serif;font-size:20px;color:var(--ink);margin-bot
       <span class="eyebrow">About</span>
       <h2 class="sec-h">An engineer who learned to build institutions.</h2>
       <p>Dr. Lalit Kumar Wadhwa is an institution builder and academic leader with <strong>26+ years</strong> of progressive experience in higher education — two principalships, academic and innovation directorships, and university-level quality assurance.</p>
-      <p>He takes institutions from <strong>establishment to accreditation and national ranking</strong> through strategic planning, governance design, and accreditation and ranking strategy across <strong>NBA, NAAC, DASCA, NIRF, THE and QS</strong>. His deep command of <strong>NEP 2020</strong> and outcome-based education is backed by an E&amp;TC research foundation and a record of building research, innovation and entrepreneurship ecosystems.</p>
+      <p>As Principal, he led his affiliated college to a <strong>NAAC CGPA of 3.74 on a 4-point scale — the highest score in an affiliated college</strong> — alongside NBA accreditation and an NIRF ranking. He takes institutions from <strong>establishment to accreditation and national ranking</strong> through strategic planning, governance design, and accreditation and ranking strategy across <strong>NBA, NAAC, DASCA, NIRF, THE and QS</strong>. His deep command of <strong>NEP 2020</strong> and outcome-based education is backed by an E&amp;TC research foundation and a record of building research, innovation and entrepreneurship ecosystems.</p>
       <div class="quote"><p>Two principalships, three directorships, one focus — institutions whose quality systems keep working long after the peer-team visit.</p></div>
     </div>
     <div class="edu rv">
@@ -1111,6 +1153,7 @@ $('#books').innerHTML=P.filter(p=>p[0]==='B').map((b,i)=>`<div class="book" styl
 
 /* awards */
 const aws=[
+ ['As Principal','NAAC CGPA 3.74 / 4','Highest score in an affiliated college on NAAC\'s 4-point scale, with NBA accreditation and an NIRF ranking during his principalship.',1],
  ['2023','Singapore Educational Excellence Award','Recognised for leadership in educational excellence.',1],
  ['AY 2024-25','IIC rise to 3-Star','Coordinated MoE Innovation Cell (IIC) activities for Dr. D. Y. Patil College of Engineering & Innovation and DYPIMED, Varale — both rose from very low ratings to 3-Star.',1],
  ['2014','First place — e-Yantra Robotics','Stood FIRST in the e-Yantra Robotics Teacher Competition-2013, held at IIT Bombay.',1],
@@ -1249,8 +1292,8 @@ $$('.rb-seg').forEach(sg=>{const show=()=>{const x=RB[sg.dataset.i];$$('.rb-seg'
 const KB=[
  {k:/^(hi|hello|hey|namaste|good (morning|afternoon|evening))\b/i,a:()=>`Hello! 🌸 I can tell you about Dr. Wadhwa's experience, the support he offers universities (NAAC, NBA, NIRF, QS, IQAC, NEP 2020), his research, or how to get in touch. What would you like to know?`},
  {k:/who|about|introduc|profile|background|tell me about/i,a:()=>`Dr. Lalit Kumar Wadhwa is <b>Director – IQAC at Vishwakarma University, Pune</b>. He's an institution builder with <b>26+ years</b> in higher education: two principalships, then Director – Innovation & Ranking (ADYPU) and Director – Academics (Dr. Sushant Patil Group). Ph.D. from IIT (ISM) Dhanbad, M.E. from COEP. <a href="#about">Read more →</a>`},
- {k:/naac|ssr|dvv|aqar|peer.?team|nba|sar\b|accredit|dasca/i,a:()=>`For <b>accreditation (NAAC · NBA · DASCA)</b> the support covers:<ul><li>Criterion-wise gap analysis</li><li>SSR / SAR drafting & data validation</li><li>DVV and evidence readiness</li><li>Mock peer-team visits</li></ul>You receive a gap-analysis report, evidence repository, SSR/SAR drafts and a mock-visit report. <a href="#partner" data-svc="0">See details →</a>`},
- {k:/nirf|qs|the impact|times higher|ranking|rank|wuri/i,a:()=>`For <b>rankings (NIRF · THE Impact · QS · WURI)</b>: parameter-wise score diagnosis, data-capture dashboards, submission drafting & review, and a year-on-year improvement plan. He previously served as <b>Director – Innovation & Ranking</b> at ADYPU. <a href="#partner" data-svc="1">See details →</a>`},
+ {k:/naac|ssr|dvv|aqar|peer.?team|nba|sar\b|accredit|dasca/i,a:()=>`As Principal he achieved a <b>NAAC CGPA of 3.74 / 4 — the highest score in an affiliated college</b> — plus NBA accreditation and an NIRF ranking.<br><br>For <b>accreditation (NAAC · NBA · DASCA)</b> the support covers:<ul><li>Criterion-wise gap analysis</li><li>SSR / SAR drafting & data validation</li><li>DVV and evidence readiness</li><li>Mock peer-team visits</li></ul>You receive a gap-analysis report, evidence repository, SSR/SAR drafts and a mock-visit report. <a href="#partner" data-svc="0">See details →</a>`},
+ {k:/nirf|qs|the impact|times higher|ranking|rank|wuri/i,a:()=>`As Principal he took his institution into the <b>NIRF rankings</b>. For <b>rankings (NIRF · THE Impact · QS · WURI)</b>: parameter-wise score diagnosis, data-capture dashboards, submission drafting & review, and a year-on-year improvement plan. He previously served as <b>Director – Innovation & Ranking</b> at ADYPU. <a href="#partner" data-svc="1">See details →</a>`},
  {k:/iqac|quality|audit|green audit|appraisal|feedback/i,a:()=>`<b>Quality assurance</b> is his current role (Director – IQAC). Support includes IQAC structure & AQAR, academic and administrative audits, green/energy audits, stakeholder feedback and faculty appraisal frameworks. <a href="#partner" data-svc="2">See details →</a>`},
  {k:/nep|obe|outcome|co.?po|curriculum|credit|abc\b/i,a:()=>`On <b>NEP 2020 & OBE</b>: curriculum and credit frameworks, CO–PO attainment mapping, ABC with multiple entry/exit, and internship & skill integration. <a href="#partner" data-svc="3">See details →</a>`},
  {k:/iic|innovation|startup|incubat|e.?cell|edc|hackathon/i,a:()=>`In AY 2024-25 he coordinated <b>IIC</b> activities for two institutions that both rose from very low ratings to <b>3-Star</b>. Support covers IIC star-rating improvement, E-Cell/EDC set-up, incubation centres and startup policy. <a href="#partner" data-svc="6">See details →</a>`},
