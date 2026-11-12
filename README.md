@@ -35,7 +35,7 @@ Questions like "papers on ZigBee" are answered by searching the publication list
 - Publications by year, career ribbon (`RB`), citations chart, readiness radar
 
 ## Intro video
-`assets/intro.mp4` (71 s, 1280×720, narrated, ~4 MB), captions in `assets/intro.vtt`, with poster `assets/intro-poster.jpg`. Chapter times are in the `CH` array in `index.html`.
+`assets/intro.mp4` (89 s, 1280×720, narrated, ~5 MB), captions in `assets/intro.vtt`, with poster `assets/intro-poster.jpg`. Chapter times are in the `CH` array in `index.html`.
 
 ## Palettes & extras
 - Colour palettes: Iris (default), Ocean, Blossom — palette button in the top bar; tokens at the top of the `<style>` block

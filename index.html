@@ -554,7 +554,7 @@ footer .fl{font-family:Fraunces,serif;font-size:20px;color:var(--ink);margin-bot
       <p class="lead">Institution builder with <strong>26+ years</strong> across two principalships, academic and innovation directorships and university-level quality assurance — taking institutions from <strong>establishment to accreditation and national ranking</strong>.</p>
       <div class="cta-row">
         <a class="btn btn-main" href="#partner">How I support universities <svg class="i" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <a class="btn btn-ghost" href="#intro" id="watchBtn"><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m10 8 6 4-6 4z" fill="currentColor"/></svg>Watch 1-min intro</a>
+        <a class="btn btn-ghost" href="#intro" id="watchBtn"><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m10 8 6 4-6 4z" fill="currentColor"/></svg>Watch 90-sec intro</a>
       </div>
       <div class="prof-links">
         <a href="https://scholar.google.com/citations?user=IepB3RIAAAAJ" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24"><path d="M2 9l10-6 10 6-10 6z"/><path d="M6 11v5c3 2 9 2 12 0v-5"/></svg>Google Scholar</a>
@@ -629,13 +629,13 @@ footer .fl{font-family:Fraunces,serif;font-size:20px;color:var(--ink);margin-bot
   <div class="wrap">
     <div class="sec-head rv">
       <span class="eyebrow">Intro video</span>
-      <h2 class="sec-h">The story in one minute</h2>
-      <p class="sec-p">From lecturer to Director – IQAC — the numbers, the journey and how he helps universities, in one short narrated film. Turn on CC for captions.</p>
+      <h2 class="sec-h">The story in 90 seconds</h2>
+      <p class="sec-p">From lecturer to Director – IQAC — the numbers, the NAAC, NBA and NIRF milestones, the journey and how he helps universities, in one short narrated film. Turn on CC for captions.</p>
     </div>
     <div class="vid-grid rv">
       <div>
         <div class="vid-box">
-          <video id="vid" src="assets/intro.mp4" poster="assets/intro-poster.jpg" preload="metadata" playsinline aria-label="One-minute narrated introduction video about Dr. Lalit Kumar Wadhwa"><track kind="captions" src="assets/intro.vtt" srclang="en" label="English"></video>
+          <video id="vid" src="assets/intro.mp4" poster="assets/intro-poster.jpg" preload="metadata" playsinline aria-label="90-second narrated introduction video about Dr. Lalit Kumar Wadhwa"><track kind="captions" src="assets/intro.vtt" srclang="en" label="English"></video>
           <button class="vid-play" id="vidPlay" aria-label="Play intro video"><span><svg viewBox="0 0 24 24"><path d="M7 4v16l13-8z"/></svg></span></button>
         </div>
         <div class="vid-bar"><i id="vidBar"></i></div>
@@ -1218,14 +1218,14 @@ addEventListener('scroll',()=>{const h=document.documentElement;$('#progress').s
 
 /* ===== intro video ===== */
 (()=>{const v=$('#vid'),pl=$('#vidPlay');
- const CH=[[0,"Building institutions"],[7.7,"Profile"],[16.2,"By the numbers"],[24.8,"Leadership journey"],[37.0,"Frameworks"],[47.4,"Five-stage approach"],[56.3,"Recognition"],[64.7,"Let's connect"]];
+ const CH=[[0,"Building institutions"],[7.7,"Profile"],[16.2,"By the numbers"],[24.8,"Leadership journey"],[37.0,"NAAC 3.74 · NBA · NIRF"],[50.3,"Frameworks"],[60.7,"Five-stage approach"],[69.6,"University roles & award"],[82.2,"Let's connect"]];
  const fmt=s=>`${Math.floor(s/60)}:${String(Math.floor(s%60)).padStart(2,'0')}`;
  $('#chap').insertAdjacentHTML('beforeend',CH.map(c=>`<button data-t="${c[0]}"><b>${fmt(c[0])}</b>${c[1]}</button>`).join(''));
  const go=t=>{v.currentTime=t;pl.classList.add('gone');v.play().catch(()=>{})};
  $$('#chap button').forEach(b=>b.onclick=()=>go(+b.dataset.t));
  pl.onclick=()=>go(v.currentTime||0);
  v.addEventListener('play',()=>{pl.classList.add('gone');v.controls=true});
- v.addEventListener('timeupdate',()=>{const t=v.currentTime;$('#vidBar').style.width=(t/(v.duration||71)*100)+'%';
+ v.addEventListener('timeupdate',()=>{const t=v.currentTime;$('#vidBar').style.width=(t/(v.duration||88.6)*100)+'%';
   let k=0;CH.forEach((c,i)=>{if(t>=c[0])k=i});$$('#chap button').forEach((b,i)=>b.classList.toggle('on',i===k))});
  $('#watchBtn').onclick=()=>setTimeout(()=>go(0),600);
 })();
@@ -1326,7 +1326,7 @@ const KB=[
  {k:/experience|career|journey|principal|worked|job/i,a:()=>`Career highlights: Lecturer at DIT Pimpri (2000) → Dean (F.E.) → <b>Principal, NMIET</b> (2018–22) → <b>Principal, DIT Pimpri</b> (2022–24) → Director – Innovation & Ranking, ADYPU → Director – Academics, Sushant Patil Group → <b>Director – IQAC, Vishwakarma University</b> (2026–). <a href="#journey">See the journey →</a>`},
  {k:/workshop|fdp|talk|session|speaker|resource person/i,a:()=>`He has been a resource person on Unified Vision & Leadership, NEP 2020 and AI Tools, and he coordinated 15+ IIT Bombay / IIT Kharagpur workshops (Remote Center RC1063). Capacity-building sessions and FDPs can be arranged. <a href="#contact" data-reason="Workshop / FDP / talk">Request one →</a>`},
  {k:/contact|email|phone|mobile|call|reach|meet|appointment|book/i,a:()=>`📞 <a href="tel:+919975273889">+91 99752 73889</a><br>✉️ <a href="mailto:wadhwalalitkumar@gmail.com">wadhwalalitkumar@gmail.com</a><br>🏛️ <a href="mailto:director.iqac@vupune.ac.in">director.iqac@vupune.ac.in</a><br>Or <a href="#contact">send a message →</a>`},
- {k:/video|intro|watch|film/i,a:()=>`There's a one-minute narrated intro film covering his profile, numbers, journey and approach. <a href="#intro">Watch it →</a>`},
+ {k:/video|intro|watch|film/i,a:()=>`There's a 90-second narrated intro film covering his profile, NAAC 3.74/4 milestone, journey, approach and university roles. <a href="#intro">Watch it →</a>`},
  {k:/thank|thanks|great|nice|awesome/i,a:()=>`You're welcome! 😊 Anything else I can help with?`}];
 const STOP=new Set('a an the on in of for and to with using based papers paper about any is are show me find research his work publications something tell what how'.split(' '));
 function pubSearch(q){const w=q.toLowerCase().replace(/[^a-z0-9 ]/g,' ').split(/\s+/).filter(x=>x.length>2&&!STOP.has(x));if(!w.length)return null;
